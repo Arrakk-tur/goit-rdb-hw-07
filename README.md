@@ -67,11 +67,16 @@ _p3_timestamp.png_
 ---
 
 ```sql
-
+SELECT
+    COUNT(date) AS dates_in_range
+FROM
+    orders
+WHERE
+    date BETWEEN '1996-07-10' AND '1996-10-08';
 ```
 
-_p1_create_schema.png_
-![p1_create_schema.png](./p1_create_schema.png)
+_p4_dates_in_range.png_
+![p4_dates_in_range.png](./p4_dates_in_range.png)
 
 ---
 
