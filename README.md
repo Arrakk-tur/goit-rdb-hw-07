@@ -87,10 +87,15 @@ _p4_dates_in_range.png_
 ---
 
 ```sql
-
+SELECT
+    id,
+    date,
+    JSON_OBJECT('id', id, 'date', date) as json_data
+FROM
+    orders;
 ```
 
-_p1_create_schema.png_
-![p1_create_schema.png](./p1_create_schema.png)
+_p5_json_data.png_
+![p5_json_data.png](./p5_json_data.png)
 
 ---
