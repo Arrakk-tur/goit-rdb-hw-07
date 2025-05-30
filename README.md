@@ -9,11 +9,18 @@
 ---
 
 ```sql
-
+SELECT
+    id,
+    date,
+    YEAR(date) AS year,
+    MONTH(date) AS month,
+    DAY(date) AS day
+FROM
+    orders;
 ```
 
-_p1_create_schema.png_
-![p1_create_schema.png](./p1_create_schema.png)
+_p1_date.png_
+![p1_date.png](./p1_date.png)
 
 ---
 
@@ -24,11 +31,14 @@ _p1_create_schema.png_
 ---
 
 ```sql
-
+SELECT
+    id, date, date + INTERVAL 1 DAY AS new_date
+FROM
+    orders;
 ```
 
-_p1_create_schema.png_
-![p1_create_schema.png](./p1_create_schema.png)
+_p2_plus_day.png_
+![p2_plus_day.png](./p2_plus_day.png)
 
 ---
 
