@@ -49,11 +49,14 @@ _p2_plus_day.png_
 ---
 
 ```sql
-
+SELECT
+    id, date, FLOOR(UNIX_TIMESTAMP(date)) AS unix_timestamp
+FROM
+    orders;
 ```
 
-_p1_create_schema.png_
-![p1_create_schema.png](./p1_create_schema.png)
+_p3_timestamp.png_
+![p3_timestamp.png](./p3_timestamp.png)
 
 ---
 
